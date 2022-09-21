@@ -169,6 +169,17 @@ hr{
   margin-right: 10px;
 }
 
+#content-navbar{
+  text-align: center;
+  margin-top: .5em;
+}
+
+#content-navbar a {
+  margin-left: .7em;
+  color: grey;
+  margin-top: .7em;
+}
+
 section{
   padding-top: 50px;
 }
@@ -189,13 +200,13 @@ section{
   margin-bottom: 4em;
 }
 
-p{
+.album-title{
   margin-top: 1em;
-  margin-left: 2em;
 }
 
 .album img{
   width: 100%;
+  margin-left: 0;
 }
 
 .img-box{
@@ -218,8 +229,8 @@ p{
   margin-left: 1.5em;
 }
 
-.img-title{
-  margin-left: 1.5em;
+.text{
+  margin-left: .5em;
 }
 
 .overlay i{
@@ -236,5 +247,5 @@ p{
 
 #site-footer{
   height: 60px;
-  background-color: green;
+  background-color: rgb(34, 33, 33);
 }
