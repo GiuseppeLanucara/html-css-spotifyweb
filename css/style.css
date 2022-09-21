@@ -5,12 +5,39 @@
 }
 /* Typo */
 h2{
-  margin-left: px;
   font-weight: 900;
+}
+
+a{
+  text-decoration: none;
+  color: white;
 }
 
 h3{
   padding: 10px 0;
+}
+
+#playlist{
+  margin-top: 15px;
+}
+
+.name{
+  display: block;
+  color:  grey;
+  margin-top: 1.5em;
+  font-weight: 700;
+}
+
+.radius{
+  background-color: grey;
+  border-radius: 50%;
+  margin-top: .5em;
+}
+
+.download{
+  width: 20px;
+  height: 20px;
+  color: grey;
 }
 
 p{
@@ -21,6 +48,24 @@ p{
 body{
   font-family: 'Roboto', sans-serif;
   color: white;
+}
+
+.white{
+  color: white;
+}
+
+.grey{
+  color: grey;
+}
+
+hr{
+  margin-top: 1em;
+  width: 80%;
+  
+}
+
+.left-margin{
+  margin-left: 20px;
 }
 
 .d-flex{
@@ -48,6 +93,52 @@ body{
 .main-menu{
   min-width: 300px;
   background-color: black;
+  display: flex;
+  flex-direction: column;
+}
+
+.logo{
+  width: 60%;
+  padding: 1em;
+}
+
+.menu-up{
+  margin-left: 15px;
+  height: 90%;
+}
+
+.menu-down{
+  height: 10%;
+}
+
+.menu-up img{
+  width: 30px;
+  height: 30px;
+  
+}
+
+.unordered{
+  list-style-type: none;
+}
+
+.playlist{
+  color: #080b12;
+  background-color: grey;
+  font-size: 2em;
+  padding: .5em;
+  margin-top: 15px;
+  
+}
+
+.list{
+  
+  margin-top: .2em;
+  list-style: none;
+}
+
+.radious{
+  border-radius: 50%;
+  object-fit: contain;
 }
 
 .music-section{
@@ -73,8 +164,9 @@ body{
   color: white;
   text-decoration: none;
   border: 2px solid white;
-  border-radius: 10px;
+  border-radius: 15px;
   padding: 10px;
+  margin-right: 10px;
 }
 
 section{
@@ -89,13 +181,17 @@ section{
 .album{
   height: 300px;
   width: 300px;
-  margin: 20px;
-  background-color: red;
-  border: 1px solid white;
+  margin: 10px;
   flex-basis: 200px;
   height: 200px;
-  margin: 40px;
+  margin: 10px;
   text-align: center;
+  margin-bottom: 4em;
+}
+
+p{
+  margin-top: 1em;
+  margin-left: 2em;
 }
 
 .album img{
@@ -116,6 +212,14 @@ section{
   height: 100%;
   font-size: 4.5rem;
   display: none;
+}
+
+.left-em{
+  margin-left: 1.5em;
+}
+
+.img-title{
+  margin-left: 1.5em;
 }
 
 .overlay i{
