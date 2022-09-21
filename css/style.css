@@ -1,70 +1,126 @@
 *{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-  
-  body{
-    color: white;
-  }
-  
-  .d-flex{
-    display: flex;
-  }
-  
-  .flex-dir-col{
-    flex-direction: column;
-  }
-  
-  .flex-dir-row{
-    flex-direction: row;
-  }
-  
-  .wrapper{
-    height: 100vh;
-    justify-content: space-between;
-  }
-  
-  #site-content{
-    height: calc(100% - 60px); /* 60px altezza del footer */
-    align-items: stretch;
-  }
-  
-  .music-section{
-    margin-top: 60px; /* altezza del subscribe-banner */
-    overflow-y: scroll;
-    overflow-x: hidden;
-  }
-  
-  .subscribe-banner {
-    height: 60px;
-    line-height: 60px;
-    width: calc(100% - 300px);
-    position: fixed;
-    top: 0;
-    right: 0;
-    background-color: #080b12;
-    text-align: right;
-  }
-  
-  .subscribe-banner a{
-    color: white;
-    text-decoration: none;
-    border: 2px solid white;
-    border-radius: 10px;
-    padding: 10px;
-  }
-  
-  .main-menu{
-    min-width: 300px;
-    background-color: black;
-  }
-  
-  .music-section{
-    background-color: #141922;
-  }
-  
-  #site-footer{
-    height: 60px;
-    background-color: green;
-  }
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/* Typo */
+h2{
+  margin-left: px;
+  font-weight: 900;
+}
+
+h3{
+  padding: 10px 0;
+}
+
+p{
+  color: #797c80;
+}
+/* END Typo */
+
+body{
+  font-family: 'Roboto', sans-serif;
+  color: white;
+}
+
+.d-flex{
+  display: flex;
+}
+.flex-dir-col{
+  flex-direction: column;
+}
+.flex-dir-row{
+  flex-direction: row;
+}
+.wrapper{
+  height: 100vh;
+  justify-content: space-between;
+}
+#site-content{
+  height: calc(100% - 60px); /* 60px altezza del footer */
+  align-items: stretch;
+}
+.main-menu{
+  min-width: 300px;
+  background-color: black;
+}
+.music-section{
+  width: 100%;
+  margin-top: 60px; /* altezza del subscribe-banner */
+  overflow-y: scroll;
+  overflow-x: hidden;
+  background-color: #141922;
+}
+.subscribe-banner {
+  height: 60px;
+  line-height: 60px;
+  width: calc(100% - 300px);
+  position: fixed;
+  top: 0;
+  right: 0;
+  background-color: #080b12;
+  text-align: right;
+}
+.subscribe-banner a{
+  color: white;
+  text-decoration: none;
+  border: 2px solid white;
+  border-radius: 10px;
+  padding: 10px;
+}
+
+section{
+  padding-top: 50px;
+}
+
+.albums{
+  padding-top: 20px;
+  flex-wrap: wrap;
+}
+
+.album{
+  height: 300px;
+  width: 300px;
+  margin: 20px;
+  background-color: red;
+  border: 1px solid white;
+  flex-basis: 200px;
+  height: 200px;
+  margin: 40px;
+  text-align: center;
+}
+.album img{
+  width: 100%;
+}
+
+.img-box{
+  position: relative;
+}
+
+.overlay{
+  position: absolute;
+  top: 0;
+  left: 0;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.4);
+  width: 100%;
+  height: 100%;
+  font-size: 4.5rem;
+  display: none;
+}
+.overlay i{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.img-box:hover .overlay{
+  display: block;
+  cursor: pointer;
+}
+
+#site-footer{
+  height: 60px;
+  background-color: green;
+}
