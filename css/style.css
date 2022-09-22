@@ -135,6 +135,7 @@ hr{
   list-style-type: none;
 }
 
+
 .playlist{
   color: #080b12;
   background-color: grey;
@@ -428,4 +429,36 @@ section{
 
 .block{
   display: block;
+}
+
+ul li a span:hover{
+  color: white;
+}
+
+ul li a span {
+  color: grey;
+}
+
+.name:hover{
+  color: white;
+}
+
+.grey:hover{
+  color: white;
+}
+
+#plus:hover{
+  background-color: white;
+}
+
+.hover:hover{
+  transform: scale(1.4);
+}
+
+.inner-bar:hover{
+  background-color: green;
+}
+
+#inner-bar-listen:hover{
+  background-color: green;
 }
