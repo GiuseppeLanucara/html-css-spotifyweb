@@ -275,7 +275,7 @@ section{
 .player-left{
   width: 400px;
   /* DEBUG */
-  background-color: grey;
+  background-color: rgb(37, 37, 37);
   display: flex;
   align-items: center;
 }
@@ -288,21 +288,68 @@ section{
 
 #song-name{
   margin-left: 9px;
+  display: block;
 }
 
 #song-current{
-  color: white;
+  color: grey;
   margin-left: 10px;
   font-size: smaller;
+  display: inline-block;
+}
+
+.inline{
+  margin-left: 25px;
+}
+
+.left-margin{
+  margin-left: 15px;
 }
 
 .player-right {
   width: 400px;
   /* debug */
-  background-color: grey;
+  background-color: rgb(37, 37, 37);
+  display: flex;
+  align-items: center;
+}
+
+.bar-player{
+  height: 5px;
+  width: 50%;
+  background-color: #797c80;
+  margin-left: 20px;
+  border-radius: 10px;
+  position: relative;
+}
+
+.inner-bar{
+  height: 5px;
+  width: 40%;
+  background-color: white;
+  border-radius: 10px;
+  position: absolute;
+  left: 0;
 }
 
 .player-center{
-  width: 100%;
+  margin-top: 15px;
+  width: 70%;
   background-color: salmon;
+  display: flex;
+  justify-content: center;
+}
+
+.button-player{
+  font-size: 25px;
+  display: inline-block;
+  margin-top: 5px;
+}
+
+.play-player{
+  font-size: 35px;
+}
+
+.block{
+  display: block;
 }
