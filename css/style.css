@@ -91,11 +91,19 @@ hr{
 }
 
 .main-menu{
-  min-width: 300px;
+  min-width: 250px;
   background-color: black;
   display: flex;
   flex-direction: column;
 }
+
+@media screen and (max-width:600px) {
+  
+  .main-menu{
+    min-width: 100px;
+}
+  }
+  
 
 .logo{
   width: 60%;
@@ -152,12 +160,18 @@ hr{
 .subscribe-banner {
   height: 60px;
   line-height: 60px;
-  width: calc(100% - 300px);
+  width: calc(100% - 250px);
   position: fixed;
   top: 0;
   right: 0;
   background-color: #080b12;
   text-align: right;
+}
+
+@media screen and (max-width:600px) {
+    .subscribe-banner{
+      width: calc(100% - 100px);
+    }
 }
 
 .subscribe-banner a{
@@ -190,11 +204,8 @@ section{
 }
 
 .album{
-  height: 300px;
-  width: 300px;
   margin: 10px;
   flex-basis: 200px;
-  height: 200px;
   margin: 10px;
   text-align: center;
   margin-bottom: 4em;
@@ -248,4 +259,33 @@ section{
 #site-footer{
   height: 60px;
   background-color: rgb(34, 33, 33);
+}
+
+.player{
+  display: flex;
+  height: 60px;
+}
+
+.player-left{
+  width: 400px;
+  /* DEBUG */
+  background-color: greenyellow;
+  display: flex;
+  align-items: center;
+}
+
+.player-right {
+  width: 400px;
+  /* debug */
+  background-color: greenyellow;
+  display: flex;
+  align-items: center;
+}
+
+.player-center{
+  width: 100%;
+  background-color: salmon;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
