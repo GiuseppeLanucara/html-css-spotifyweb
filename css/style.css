@@ -33,6 +33,7 @@ h3{
   font-weight: 700;
 }
 
+
 .radius{
   background-color: grey;
   border-radius: 50%;
@@ -274,7 +275,6 @@ section{
 
 .player-left{
   width: 400px;
-  /* DEBUG */
   background-color: rgb(37, 37, 37);
   display: flex;
   align-items: center;
@@ -291,6 +291,12 @@ section{
   display: block;
 }
 
+@media screen and(max-width:600px) {
+  #song-name{
+    font-size: smaller;
+  }
+}
+
 #song-current{
   color: grey;
   margin-left: 10px;
@@ -298,12 +304,42 @@ section{
   display: inline-block;
 }
 
+@media screen and (max-width:600px) {
+  #song-current{
+    font-size: 10px;
+  }
+}
+
 .inline{
   margin-left: 25px;
 }
 
+@media screen and (max-width:768px) {
+  .inline{
+    margin-left: 7px;
+  }
+}
+
+@media screen and (max-width:600px) {
+  .inline{
+    margin-left: 7px;
+  }
+}
+
 .left-margin{
   margin-left: 15px;
+}
+
+@media screen and (max-width:768px) {
+  .left-margin{
+    margin-left: 7px;
+  }
+}
+
+@media screen and (max-width:600px) {
+  .left-margin{
+    margin-left: 7px;
+  }
 }
 
 .player-right {
@@ -335,7 +371,7 @@ section{
 .player-center{
   margin-top: 15px;
   width: 70%;
-  background-color: salmon;
+  background-color: rgb(37, 37, 37);
   display: flex;
   justify-content: center;
 }
@@ -348,6 +384,46 @@ section{
 
 .play-player{
   font-size: 35px;
+}
+
+.central{
+  width: 70%;
+  background-color: rgb(37, 37, 37);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.central-bar {
+  display: flex;
+  justify-content: center;
+  width: 70%;
+}
+
+#central-bar-listen{
+  width: 100%;
+  height: 5px;
+  background-color: #797c80;
+  border-radius: 10px;
+  position: relative;
+  margin-top: 10px;
+  margin-right: 8px;
+}
+
+#inner-bar-listen {
+  width: 40%;
+  height: 5px;
+  background-color: white;
+  border-radius: 10px;
+  position: absolute;
+  left: 0;
+}
+
+.time{
+  color: white;
+  font-size: 10px;
+  padding-top: 8px;
+  margin-right: 8px;
 }
 
 .block{
