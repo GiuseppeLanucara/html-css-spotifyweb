@@ -3,6 +3,11 @@
   padding: 0;
   box-sizing: border-box;
 }
+
+img {
+  max-width: 100%;
+}
+
 /* Typo */
 h2{
   font-weight: 900;
@@ -86,7 +91,7 @@ hr{
 }
 
 #site-content{
-  height: calc(100% - 60px); /* 60px altezza del footer */
+  height: calc(100% - 80px); /* 60px altezza del footer */
   align-items: stretch;
 }
 
@@ -257,35 +262,47 @@ section{
 }
 
 #site-footer{
-  height: 60px;
+  height: 80px;
   background-color: rgb(34, 33, 33);
 }
 
 .player{
   display: flex;
-  height: 60px;
+  height: 80px;
+  
 }
 
 .player-left{
   width: 400px;
   /* DEBUG */
-  background-color: greenyellow;
+  background-color: grey;
   display: flex;
   align-items: center;
+}
+
+#small-play{
+  width: 50px;
+  height: 50px;
+  margin-left: 10px;
+}
+
+#song-name{
+  margin-left: 9px;
+}
+
+#song-current{
+  color: white;
+  margin-left: 10px;
+  font-size: smaller;
 }
 
 .player-right {
   width: 400px;
   /* debug */
-  background-color: greenyellow;
-  display: flex;
-  align-items: center;
+  background-color: grey;
 }
 
 .player-center{
   width: 100%;
   background-color: salmon;
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
