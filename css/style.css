@@ -233,6 +233,10 @@ hr{
   font-weight: 600;
 }
 
+#content-navbar a:hover{
+  color: white;
+}
+
 section{
   padding-top: 50px;
 }
