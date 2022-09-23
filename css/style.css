@@ -46,6 +46,12 @@ h3{
   color: grey;
 }
 
+@media screen and (max-width:601px) {
+  .download{
+    margin-left: 15px;
+  }
+}
+
 p{
   color: #797c80;
 }
@@ -68,6 +74,12 @@ hr{
   margin-top: 1em;
   width: 80%;
   
+}
+
+@media screen and (max-width:601px) {
+  hr{
+    border: 1px solid black;
+  }
 }
 
 .left-margin{
@@ -198,6 +210,13 @@ hr{
   margin-right: 10px;
 }
 
+@media screen and(max-width:601px) {
+  .subscribe-banner a{
+    padding: 5px;
+  }
+}
+
+
 #content-navbar{
   text-align: center;
   margin-top: .5em;
@@ -206,7 +225,9 @@ hr{
 #content-navbar a {
   margin-left: .7em;
   color: grey;
-  margin-top: .7em;
+  margin-top: .9em;
+  line-height: 60px;
+  font-weight: 600;
 }
 
 section{
