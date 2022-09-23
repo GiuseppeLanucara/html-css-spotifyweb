@@ -106,15 +106,23 @@ hr{
 @media screen and (max-width:600px) {
   
   .main-menu{
-    min-width: 100px;
+    min-width: 60px;
 }
   }
-  
+
 
 .logo{
-  width: 60%;
+  width: 80%;
   padding: 1em;
 }
+
+@media screen and (max-width:601px) {
+  .logo{
+    width: 100%;
+
+  }
+}
+
 
 .menu-up{
   margin-left: 15px;
@@ -175,9 +183,9 @@ hr{
   text-align: right;
 }
 
-@media screen and (max-width:600px) {
+@media screen and (max-width:601px) {
     .subscribe-banner{
-      width: calc(100% - 100px);
+      width: calc(100% - 59px);
     }
 }
 
@@ -463,16 +471,21 @@ ul li a span {
   background-color: green;
 }
 
-.logo:last-child{
+#first-logo{
   display: none;
 }
 
-@media screen and (max-width:600px) {
-  .logo:first-child{
+@media screen and (max-width:601px) {
+  #second-logo{
     display: none;
   }
 
-  .logo:last-child{
+  #first-logo{
     display: block;
   }
+
+  .hide-xs{
+    display: none;
+  }
+
 }
