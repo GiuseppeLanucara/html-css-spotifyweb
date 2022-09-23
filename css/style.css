@@ -534,6 +534,14 @@ ul li a span {
   display: none;
 }
 
+#first-green {
+  text-decoration: underline;
+  text-decoration-color: green;
+  display: inline-block;
+  text-underline-offset: 10px;
+  text-decoration-thickness: 3px;
+}
+
 @media screen and (max-width:601px) {
   #second-logo {
     display: none;
@@ -546,5 +554,4 @@ ul li a span {
   .hide-xs {
     display: none;
   }
-
 }
