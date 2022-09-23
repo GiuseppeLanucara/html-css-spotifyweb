@@ -1,4 +1,5 @@
-*{
+/* RESET */
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -8,158 +9,169 @@ img {
   max-width: 100%;
 }
 
-/* Typo */
-h2{
+body {
+  font-family: 'Roboto', sans-serif;
+  color: white;
+}
+/* RESET */
+
+
+/* UTILITY */
+h2 {
   font-weight: 900;
 }
 
-a{
+a {
   text-decoration: none;
   color: white;
 }
 
-h3{
+h3 {
   padding: 10px 0;
 }
 
-#playlist{
+.radius {
+  background-color: grey;
+  border-radius: 50%;
+  margin-top: .5em;
+}
+
+p {
+  color: #797c80;
+}
+
+.white {
+  color: white;
+}
+
+.grey {
+  color: grey;
+}
+
+hr {
+  margin-top: 1em;
+  width: 80%;
+  
+}
+
+.left-margin {
+  margin-left: 20px;
+}
+
+.d-flex {
+  display: flex;
+}
+
+.flex-dir-col {
+  flex-direction: column;
+}
+
+.flex-dir-row {
+  flex-direction: row;
+}
+
+.radious {
+  border-radius: 50%;
+  object-fit: contain;
+}
+/* UTILITY */
+
+
+#playlist {
   margin-top: 15px;
 }
 
-.name{
+.name {
   display: block;
   color:  grey;
   margin-top: 1.5em;
   font-weight: 700;
 }
 
-#create{
+#create {
   display: inline;
 }
 
-.radius{
-  background-color: grey;
-  border-radius: 50%;
-  margin-top: .5em;
-}
-
-.download{
+.download {
   width: 20px;
   height: 20px;
   color: grey;
 }
 
+/* dispositivo xs */
 @media screen and (max-width:601px) {
-  .download{
+  .download {
     margin-left: 15px;
   }
 }
 
-p{
-  color: #797c80;
-}
-/* END Typo */
-
-body{
-  font-family: 'Roboto', sans-serif;
-  color: white;
-}
-
-.white{
-  color: white;
-}
-
-.grey{
-  color: grey;
-}
-
-hr{
-  margin-top: 1em;
-  width: 80%;
-  
-}
-
 @media screen and (max-width:601px) {
-  hr{
+  hr {
     border: 1px solid black;
   }
 }
+/* /dispositivo xs */
 
-.left-margin{
-  margin-left: 20px;
-}
 
-.d-flex{
-  display: flex;
-}
-
-.flex-dir-col{
-  flex-direction: column;
-}
-
-.flex-dir-row{
-  flex-direction: row;
-}
-
-.wrapper{
+.wrapper {
   height: 100vh;
   justify-content: space-between;
 }
 
-#site-content{
+#site-content {
   height: calc(100% - 80px); /* 60px altezza del footer */
   align-items: stretch;
 }
 
-.main-menu{
+.main-menu {
   min-width: 250px;
   background-color: black;
   display: flex;
   flex-direction: column;
 }
 
+/* dispositivo xs */
 @media screen and (max-width:600px) {
   
-  .main-menu{
+  .main-menu {
     min-width: 60px;
 }
   }
 
 
-.logo{
+.logo {
   width: 80%;
   padding: 1em;
 }
 
 @media screen and (max-width:601px) {
-  .logo{
+  .logo {
     width: 100%;
 
   }
 }
+/* /dispositivo xs */
 
 
-.menu-up{
+.menu-up {
   margin-left: 15px;
   height: 90%;
 }
 
-.menu-down{
+.menu-down {
   height: 10%;
 }
 
-.menu-up img{
+.menu-up img {
   width: 30px;
   height: 30px;
-  
 }
 
-.unordered{
+.unordered {
   list-style-type: none;
 }
 
-
-.playlist{
+.playlist{ 
   color: #080b12;
   background-color: grey;
   font-size: 2em;
@@ -168,18 +180,12 @@ hr{
   
 }
 
-.list{
-  
+.list {
   margin-top: .2em;
   list-style: none;
 }
 
-.radious{
-  border-radius: 50%;
-  object-fit: contain;
-}
-
-.music-section{
+.music-section {
   width: 100%;
   margin-top: 60px; /* altezza del subscribe-banner */
   overflow-y: scroll;
@@ -198,13 +204,14 @@ hr{
   text-align: right;
 }
 
+/* dispositivo xs */
 @media screen and (max-width:601px) {
     .subscribe-banner{
       width: calc(100% - 59px);
     }
 }
 
-.subscribe-banner a{
+.subscribe-banner a {
   color: white;
   text-decoration: none;
   border: 2px solid white;
@@ -218,9 +225,9 @@ hr{
     padding: 5px;
   }
 }
+/* /dispositivo xs */
 
-
-#green-bar{
+#green-bar {
   display: inline-block;
   height: 5px;
   width: 16px;
@@ -231,7 +238,7 @@ hr{
   margin-left: -22px;
 }
 
-#content-navbar{
+#content-navbar {
   text-align: center;
   margin-top: .5em;
 }
@@ -244,20 +251,20 @@ hr{
   font-weight: 600;
 }
 
-#content-navbar a:hover{
+#content-navbar a:hover {
   color: white;
 }
 
-section{
+section {
   padding-top: 50px;
 }
 
-.albums{
+.albums {
   padding-top: 20px;
   flex-wrap: wrap;
 }
 
-.album{
+.album {
   margin: 10px;
   flex-basis: 200px;
   margin: 10px;
@@ -265,20 +272,20 @@ section{
   margin-bottom: 4em;
 }
 
-.album-title{
+.album-title {
   margin-top: 1em;
 }
 
-.album img{
+.album img {
   width: 100%;
   margin-left: 0;
 }
 
-.img-box{
+.img-box {
   position: relative;
 }
 
-.overlay{
+.overlay {
   position: absolute;
   top: 0;
   left: 0;
@@ -290,105 +297,118 @@ section{
   display: none;
 }
 
-.left-em{
+.left-em {
   margin-left: 1.5em;
 }
 
-.text{
+.text {
   margin-left: .5em;
 }
 
-.overlay i{
+.overlay i {
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
 }
 
-.img-box:hover .overlay{
+.img-box:hover .overlay {
   display: block;
   cursor: pointer;
 }
 
-#site-footer{
+#site-footer {
   height: 80px;
   background-color: rgb(34, 33, 33);
 }
 
-.player{
+.player {
   display: flex;
   height: 80px;
   
 }
 
-.player-left{
+.player-left {
   width: 400px;
   background-color: rgb(37, 37, 37);
   display: flex;
   align-items: center;
 }
 
-#small-play{
+#small-play {
   width: 50px;
   height: 50px;
   margin-left: 10px;
 }
 
-#song-name{
+#song-name {
   margin-left: 9px;
   display: block;
 }
 
+/* dispositivo xs */
 @media screen and(max-width:600px) {
-  #song-name{
+  #song-name {
     font-size: smaller;
   }
 }
+/* /dispositivo xs */
 
-#song-current{
+#song-current {
   color: grey;
   margin-left: 10px;
   font-size: smaller;
   display: inline-block;
 }
 
+/* dispositivo xs */
 @media screen and (max-width:600px) {
-  #song-current{
+  #song-current {
     font-size: 10px;
   }
 }
+/* /dispositivo xs */
 
-.inline{
+.inline {
   margin-left: 25px;
 }
 
+/* dispositivo tablet */
 @media screen and (max-width:768px) {
-  .inline{
+  .inline { 
     margin-left: 7px;
   }
 }
+/* /dispositivo tablet */
 
+/* dispositivo xs */
 @media screen and (max-width:600px) {
-  .inline{
+  .inline {
     margin-left: 7px;
   }
 }
+/* /dispositivo xs */
 
-.left-margin{
+
+.left-margin {
   margin-left: 15px;
 }
 
+/* dispositivo tablet */
 @media screen and (max-width:768px) {
-  .left-margin{
+  .left-margin {
     margin-left: 7px;
   }
 }
+/* /dispositivo tablet */
 
+/* dispositivo xs */
 @media screen and (max-width:600px) {
-  .left-margin{
+  .left-margin {
     margin-left: 7px;
   }
 }
+/* /dispositivo xs */
 
 .player-right {
   width: 400px;
@@ -398,7 +418,7 @@ section{
   align-items: center;
 }
 
-.bar-player{
+.bar-player {
   height: 5px;
   width: 50%;
   background-color: #797c80;
@@ -407,7 +427,7 @@ section{
   position: relative;
 }
 
-.inner-bar{
+.inner-bar {
   height: 5px;
   width: 40%;
   background-color: white;
@@ -416,7 +436,7 @@ section{
   left: 0;
 }
 
-.player-center{
+.player-center {
   margin-top: 15px;
   width: 70%;
   background-color: rgb(37, 37, 37);
@@ -424,17 +444,17 @@ section{
   justify-content: center;
 }
 
-.button-player{
+.button-player {
   font-size: 25px;
   display: inline-block;
   margin-top: 5px;
 }
 
-.play-player{
+.play-player {
   font-size: 35px;
 }
 
-.central{
+.central {
   width: 70%;
   background-color: rgb(37, 37, 37);
   display: flex;
@@ -448,7 +468,7 @@ section{
   width: 70%;
 }
 
-#central-bar-listen{
+#central-bar-listen {
   width: 100%;
   height: 5px;
   background-color: #797c80;
@@ -467,18 +487,18 @@ section{
   left: 0;
 }
 
-.time{
+.time {
   color: white;
   font-size: 10px;
   padding-top: 8px;
   margin-right: 8px;
 }
 
-.block{
+.block {
   display: block;
 }
 
-ul li a span:hover{
+ul li a span:hover {
   color: white;
 }
 
@@ -486,44 +506,44 @@ ul li a span {
   color: grey;
 }
 
-.name:hover{
+.name:hover {
   color: white;
 }
 
-.grey:hover{
+.grey:hover {
   color: white;
 }
 
-#plus:hover{
+#plus:hover {
   background-color: white;
 }
 
-.hover:hover{
+.hover:hover {
   transform: scale(1.4);
 }
 
-.inner-bar:hover{
+.inner-bar:hover { 
   background-color: green;
 }
 
-#inner-bar-listen:hover{
+#inner-bar-listen:hover {
   background-color: green;
 }
 
-#first-logo{
+#first-logo {
   display: none;
 }
 
 @media screen and (max-width:601px) {
-  #second-logo{
+  #second-logo {
     display: none;
   }
 
-  #first-logo{
+  #first-logo {
     display: block;
   }
 
-  .hide-xs{
+  .hide-xs {
     display: none;
   }
 
