@@ -220,6 +220,17 @@ hr{
 }
 
 
+#green-bar{
+  display: inline-block;
+  height: 5px;
+  width: 16px;
+  background-color: green;
+  border: 2px solid green;
+  margin-bottom: 15px;
+  transform: rotate(90deg);
+  margin-left: -22px;
+}
+
 #content-navbar{
   text-align: center;
   margin-top: .5em;
