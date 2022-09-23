@@ -462,3 +462,17 @@ ul li a span {
 #inner-bar-listen:hover{
   background-color: green;
 }
+
+.logo:last-child{
+  display: none;
+}
+
+@media screen and (max-width:600px) {
+  .logo:first-child{
+    display: none;
+  }
+
+  .logo:last-child{
+    display: block;
+  }
+}
